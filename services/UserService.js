@@ -6,8 +6,8 @@ exports.getAll = async (req, res) => {
     res.status(200).json(users);
   } catch (error) {
     res.status(500).json(error);
-  }
-}
+  };
+};
 
 exports.getById = async (req, res) => {
   try {
@@ -15,8 +15,8 @@ exports.getById = async (req, res) => {
     res.status(200).json(user);
   } catch (error) {
     res.status(500).json(error);
-  }
-}
+  };
+};
 
 exports.create = async (req, res) => {
   try {
@@ -28,9 +28,9 @@ exports.create = async (req, res) => {
     res.status(201).json({ message: "User created!" })
   } catch (error) {
     res.status(500).json(error);
-  }
+  };
 
-}
+};
 
 exports.update = async (req, res) => {
   try {
@@ -44,8 +44,8 @@ exports.update = async (req, res) => {
     res.status(200).json(user);
   } catch (error) {
     res.status(500).json(error);
-  }
-}
+  };
+};
 
 exports.deleteById = async (req, res) => {
   try {
@@ -53,7 +53,6 @@ exports.deleteById = async (req, res) => {
     res.status(200).json({message: "usuário deletado"});
   } catch (error) {
     res.status(500).json(error);
-  }
-
-}
+  };
+};
 
